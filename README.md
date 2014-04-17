@@ -38,7 +38,7 @@ source dev.sh
 Now you can run tusd:
 
 ```bash
-go run src/cmd/tusd/main.go
+TUSD_DATA_STORE_MAXSIZE=2147483648 TUSD_SERVER_READ_TIMEOUT_IN_SECONDS=1000 TUSD_SERVER_WRITE_TIMEOUT_IN_SECONDS=1000 go run src/cmd/tusd/main.go
 ```
 
 ## Running the testsuite
